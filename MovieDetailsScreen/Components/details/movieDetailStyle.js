@@ -56,13 +56,13 @@ const style = StyleSheet.create({
         border: 0,
         borderRadius: 7,
         backgroundColor: 'rgb(90,128,236)',
-        padding: 20,
+        padding: 15,
         alignItems: 'center',
     },
     ticketText: {
         color: 'white',
         fontWeight: '700',
-        fontSize: 15,
+        fontSize: 13,
     }
 });
 
