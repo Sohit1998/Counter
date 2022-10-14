@@ -13,28 +13,6 @@ export class Input extends Component {
             input3: '',
             input4: ''
         }
-            // arr: []
-        // }
-    
-
-    // inputChangeHandler = (name,value,ref) => {
-    //     this.setState({
-    //         ...this.state.input, 
-    //         [name] : value
-            
-    //     })
-    //     if(name !== ''){
-    //         this.name.focus()
-    //     }
-        
-    // }
-
-    // keyPressHandler = (nativeEvent,refer, input) => {
-    //   console.log(nativeEvent.current);
-      
-    //   console.log(nativeEvent.key);
-    //   if(nativeEvent.key === 'Backspace' ) {
-        
       }
       
     
@@ -54,16 +32,12 @@ export class Input extends Component {
                     this.refs.inputref2.focus()
                 }
             }}
-            // name= 'input1'
-            // onKeyPress={({ nativeEvent }) => {
-            //     nativeEvent.key === 'Backspace' ? this.refs.inputref1.clear() : null}}
-            // onKeyPress = {({nativeEvent, }) => keyPressHandler(nativeEvent,"inputref1",'input1')}
+            
             value= {this.state.input1}
-            // onChangeText= {(value) => inputChangeHandler('input1','inputref1',value)}
+            
             autoFocus= {true}
             maxLength= {this.maxLength}
             style={style.textInput}
-            // onKeyPress = {}
           />
 
 
@@ -76,7 +50,7 @@ export class Input extends Component {
                 }
                 
             }}
-            // onKeyPress = {({nativeEvent}) => keyPressHandler(nativeEvent, "inputref2", 'input2')}
+            
             onKeyPress={({ nativeEvent }) => {
               if(nativeEvent.key === 'Backspace' && this.state.input2 === '' && this.state.input1 !== '')
               {
@@ -85,7 +59,6 @@ export class Input extends Component {
               }}}
             // name= 'input2'
             value= {this.state.input2}
-            // onChangeText= {(value) => inputChangeHandler('input2',value)}
             maximumLength={this.maxLength}
             keyboardType="numeric"
             style={style.textInput}
@@ -109,10 +82,8 @@ export class Input extends Component {
                   this.refs.inputref2.focus()
                   this.setState({input2 : ''})
               }}}
-            // onKeyPress = {({nativeEvent}) => keyPressHandler(nativeEvent, "inputref3",'input3')}
-            // name= 'input3'
+            
             value= {this.state.input3}
-            // onChangeText= {(value) => inputChangeHandler('input3',value)}
             maximumLength={this.maxLength}
             keyboardType="numeric"
             style={style.textInput}
@@ -132,12 +103,9 @@ export class Input extends Component {
               {
                   this.refs.inputref3.focus()
                   this.setState({input3 : ''})
-                  // console.log('input4');
               }}}
-            // onKeyPress = {({nativeEvent},) => keyPressHandler(nativeEvent, "inputref4", 'input4')}
-            // name= 'input4'
+            
             value= {this.state.input4}
-            // onChangeText= {(value) => inputChangeHandler('input4',value)}
             maximumLength={this.maxLength}
             keyboardType="numeric"
             style={style.textInput}
