@@ -3,10 +3,10 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
 
 counterCont: {
-    display: 'flex',
-    // alignItems: 'center',
+    // display: 'flex',
+    alignItems: 'center',
     fontSize: 30,
-    width: '80%',
+    // width: '80%',
     marginTop: 40,
     // backgroundColor: 'pink',
     borderRadius: 10
@@ -16,8 +16,8 @@ counterCont: {
     fontSize: 60,
     textAlign: 'center',
     borderRadius: 100,
-    backgroundColor: 'green',
-    color: 'white',
+    // backgroundColor: 'green',
+    color: 'black',
   },
   btnCont: {
     display: 'flex',
@@ -45,13 +45,14 @@ counterCont: {
   },
 
   secbtnMain: {
+    marginHorizontal: 10,
     width: '100%',
     textAlign: 'center',
     marginTop: 30,
     marginBottom: 30,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    // display: 'flex',
+    // flexDirection: 'row',
+    // justifyContent: 'space-evenly',
     alignItems: 'center',
   },
 
@@ -63,8 +64,12 @@ counterCont: {
   },
 
   resetbtn: {
+    alignItems: 'center',
+    textAlign: 'center',
     backgroundColor: 'pink',
     padding: 20,
+    marginHorizontal: 10,
+    width: '100%'
 
   }
 
