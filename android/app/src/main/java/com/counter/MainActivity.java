@@ -7,6 +7,8 @@ import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
 
+
+
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
    * rendering of the component.
@@ -25,6 +27,7 @@ public class MainActivity extends ReactActivity {
    * you can specify the renderer you wish to use - the new renderer (Fabric) or the old renderer
    * (Paper).
    */
+
   @Override
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new MainActivityDelegate(this, getMainComponentName());
