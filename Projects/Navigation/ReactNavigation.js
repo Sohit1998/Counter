@@ -27,6 +27,16 @@ export class ReactNavigation extends Component {
             onPress={() => navigation.navigate('COUNTER')}>
             <Text style={style.btnText}>Counter</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={style.link}
+            onPress={() => navigation.navigate('WEBVIEW')}>
+            <Text style={style.btnText}>WebView</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={style.link}
+            onPress={() => navigation.navigate('SLIDER')}>
+            <Text style={style.btnText}>Slider</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
