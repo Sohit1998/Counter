@@ -37,6 +37,11 @@ export class ReactNavigation extends Component {
             onPress={() => navigation.navigate('SLIDER')}>
             <Text style={style.btnText}>Slider</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={style.link}
+            onPress={() => navigation.navigate('SECTIONLIST')}>
+            <Text style={style.btnText}>SectionList</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
