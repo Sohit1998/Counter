@@ -10,6 +10,7 @@ import Counter from './Projects/CounterProject/Counter';
 import WebViewNative from './Projects/webView/WebView';
 import Slider from './Projects/slider/Slider';
 import SectionListComp from './Projects/sectionList/SectionListComp';
+import ClipboardUI from './Projects/clipboard/ClipboardUI';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,7 @@ export class App extends Component {
           <Stack.Screen name="WEBVIEW" component={WebViewNative} />
           <Stack.Screen name="SLIDER" component={Slider} />
           <Stack.Screen name="SECTIONLIST" component={SectionListComp} />
+          <Stack.Screen name="CLIPBOARD" component={ClipboardUI} />
         </Stack.Navigator>
       </NavigationContainer>
     );
