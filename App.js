@@ -11,6 +11,11 @@ import WebViewNative from './Projects/webView/WebView';
 import Slider from './Projects/slider/Slider';
 import SectionListComp from './Projects/sectionList/SectionListComp';
 import ClipboardUI from './Projects/clipboard/ClipboardUI';
+import ReactAnimation from './Projects/animation/AnimationOne';
+import Animations from './Projects/animation/Animations';
+import AnimationOne from './Projects/animation/AnimationOne';
+import AnimationTwo from './Projects/animation/AnimationTwo';
+import AnimateTextCross from './Projects/animation/AnimateTextCross';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +36,10 @@ export class App extends Component {
           <Stack.Screen name="SLIDER" component={Slider} />
           <Stack.Screen name="SECTIONLIST" component={SectionListComp} />
           <Stack.Screen name="CLIPBOARD" component={ClipboardUI} />
+          <Stack.Screen name="ANIMATIONS" component={Animations} />
+          <Stack.Screen name="ANIMATIONONE" component={AnimationOne} />
+          {/* <Stack.Screen name="ANIMATIONTWO" component={AnimationTwo} /> */}
+          <Stack.Screen name="ANIMATION3" component={AnimateTextCross} />
         </Stack.Navigator>
       </NavigationContainer>
     );

@@ -47,6 +47,11 @@ export class ReactNavigation extends Component {
             onPress={() => navigation.navigate('CLIPBOARD')}>
             <Text style={style.btnText}>Clipboard</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={style.link}
+            onPress={() => navigation.navigate('ANIMATIONS')}>
+            <Text style={style.btnText}>Animations</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
