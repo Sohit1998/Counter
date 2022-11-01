@@ -12,7 +12,7 @@ export default function Animations(props) {
       </TouchableOpacity>
       <TouchableOpacity
         style={style.link}
-        onPress={() => navigation.navigate('ANIMATION3')}>
+        onPress={() => navigation.navigate('ANIMATIONTWO')}>
         <Text style={style.btnText}>AnimationTwo</Text>
       </TouchableOpacity>
     </View>

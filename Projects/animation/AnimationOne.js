@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Animated } from 'react-native'
 import React, { useState, useEffect } from 'react';
-import style from './ReactAnimationStyle';
+// import style from './ReactAnimationStyle';
 
 const AnimationOne = () => {
 
@@ -32,7 +32,7 @@ const AnimationOne = () => {
     
 
   return (
-    <View style={style.animationCont} >
+    <Animated.View style={style.animationCont} >
       <Animated.Text style={{
         color:'red',
         fontSize:fontSize,
@@ -42,9 +42,17 @@ const AnimationOne = () => {
       }}
       >ANIMATION</Animated.Text>
       
-    </View>
+    </Animated.View>
   )
 }
+
+const style = StyleSheet.create({
+  animationCont: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+})
 
 
 

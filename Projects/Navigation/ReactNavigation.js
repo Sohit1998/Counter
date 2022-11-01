@@ -1,10 +1,11 @@
-import {Text, View, TouchableOpacity} from 'react-native';
+import {Text, View, TouchableOpacity, ScrollView} from 'react-native';
 import React, {Component} from 'react';
 import style from './ReactNavigationStyle';
 export class ReactNavigation extends Component {
   render() {
     const { navigation } = this.props;
     return (
+      <ScrollView>
       <View style={style.primaryCont}>
         {/* <View style={style.headCont}>
           <Text style={style.heading}>DASHBOARD</Text>
@@ -52,8 +53,14 @@ export class ReactNavigation extends Component {
             onPress={() => navigation.navigate('ANIMATIONS')}>
             <Text style={style.btnText}>Animations</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={style.link}
+            onPress={() => navigation.navigate('FLATLISTASSIGN')}>
+            <Text style={style.btnText}>FlatListAssign</Text>
+          </TouchableOpacity>
         </View>
       </View>
+      </ScrollView>
     );
   }
 }
