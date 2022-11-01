@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet, Animated } from 'react-native'
 import React, { useState, useEffect } from 'react';
-import style from './ReactAnimationStyle';
 
 const AnimationOne = () => {
 
@@ -45,6 +44,14 @@ const AnimationOne = () => {
     </View>
   )
 }
+
+const style = StyleSheet.create({
+  animationCont: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+})
 
 
 
