@@ -15,7 +15,6 @@ import ReactAnimation from './Projects/animation/AnimationOne';
 import Animations from './Projects/animation/Animations';
 import AnimationOne from './Projects/animation/AnimationOne';
 import AnimationTwo from './Projects/animation/AnimationTwo';
-import AnimateTextCross from './Projects/animation/AnimateTextCross';
 
 const Stack = createNativeStackNavigator();
 
@@ -38,8 +37,7 @@ export class App extends Component {
           <Stack.Screen name="CLIPBOARD" component={ClipboardUI} />
           <Stack.Screen name="ANIMATIONS" component={Animations} />
           <Stack.Screen name="ANIMATIONONE" component={AnimationOne} />
-          {/* <Stack.Screen name="ANIMATIONTWO" component={AnimationTwo} /> */}
-          <Stack.Screen name="ANIMATION3" component={AnimateTextCross} />
+          <Stack.Screen name="ANIMATIONTWO" component={AnimationTwo} />
         </Stack.Navigator>
       </NavigationContainer>
     );
