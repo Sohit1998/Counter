@@ -1,6 +1,9 @@
 import { View, Text, StyleSheet, Animated } from 'react-native'
 import React, { useState, useEffect } from 'react';
+<<<<<<< HEAD
 // import style from './ReactAnimationStyle';
+=======
+>>>>>>> 48adc8d48a0b7e0c4379c0efb27858c5f4c30fa9
 
 const AnimationOne = () => {
 
