@@ -1,9 +1,27 @@
-import {Text, View, TouchableOpacity, ScrollView} from 'react-native';
-import React, {Component} from 'react';
+import {Text, View, TouchableOpacity, ScrollView, AsyncStorage} from 'react-native';
+import React, {Component, useEffect} from 'react';
 import style from './ReactNavigationStyle';
-export class ReactNavigation extends Component {
-  render() {
-    const { navigation } = this.props;
+const  ReactNavigation = (props) =>  {
+  
+    const { navigation } = props;
+
+    // useEffect(() => {
+      // checkData()
+      async function logInBtnHandler(){
+          try {
+              const value = await AsyncStorage.getItem('userDetails');
+              let newData = await (JSON.parse(value))
+              if(newData) {
+                  navigation.navigate('ASYNCHOME')
+              }else{
+                navigation.navigate("LOGIN")
+              }
+            } catch(e) {
+              console.error(e);
+            }
+      }
+    // })
+
     return (
       <ScrollView>
       <View style={style.primaryCont}>
@@ -58,11 +76,16 @@ export class ReactNavigation extends Component {
             onPress={() => navigation.navigate('FLATLISTASSIGN')}>
             <Text style={style.btnText}>FlatListAssign</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={style.link}
+            onPress={logInBtnHandler}>
+            <Text style={style.btnText}>Log In Page</Text>
+          </TouchableOpacity>
         </View>
       </View>
       </ScrollView>
     );
-  }
+  
 }
 
 
