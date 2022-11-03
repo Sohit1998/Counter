@@ -15,6 +15,9 @@ import ReactAnimation from './Projects/animation/AnimationOne';
 import Animations from './Projects/animation/Animations';
 import AnimationOne from './Projects/animation/AnimationOne';
 import AnimationTwo from './Projects/animation/AnimationTwo';
+import FlatListAssign from './Projects/flatListComp/FlatListAssign';
+import LogIn from './Projects/asyncStorageProject/LogIn';
+import AsyncHome from './Projects/asyncStorageProject/AsyncHome';
 
 
 const Stack = createNativeStackNavigator();
@@ -39,7 +42,11 @@ export class App extends Component {
           <Stack.Screen name="ANIMATIONS" component={Animations} />
           <Stack.Screen name="ANIMATIONONE" component={AnimationOne} />
           
-          <Stack.Screen name="ANIMATION3" component={AnimationTwo} />
+          <Stack.Screen name="ANIMATIONTWO" component={AnimationTwo} />
+          <Stack.Screen name="FLATLISTASSIGN" component={FlatListAssign} />
+          <Stack.Screen name="LOGIN" component={LogIn} />
+          <Stack.Screen name="ASYNCHOME" component={AsyncHome} />
+          
         </Stack.Navigator>
       </NavigationContainer>
     );
